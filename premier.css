@@ -49,10 +49,21 @@ html,body{
     font-family:monument ;
     letter-spacing: -1px;
     font-size: 37px;
+    position: relative;
+}
+
+#nav h6{
+    position: absolute;
+    top: 5.3vw;
+    left: 9vw;
+    font-weight: 800;
+    font-size: 12px;
+    color: #000000b9
 }
 
 #nav h2:nth-last-child(1){
     width: 10%;
+    border-right: none;
 }
 
 #nav h2:nth-last-child(2){
@@ -126,3 +137,265 @@ html,body{
 #over2 img{
     height: 3vw;
 }
+
+#scroll{
+    width: 100%;
+    height: 40vh;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#scroll img{
+    height:95% ;
+    width: 15%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position:30% 30%;
+    margin: 1vw;
+}
+
+#container{
+    height: 100%;
+    width: 110%;
+    display: inline-block;
+    padding: 1vw;
+    animation-name: moving;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moving {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+    
+}
+
+#alpha{
+    display: flex;
+    height: 12vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    margin-top: 24px;
+}
+
+
+#alpha h5{
+    font-size: 1.6vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    border-bottom: 1px solid #00000000;
+    letter-spacing: 4px;
+    cursor: pointer;
+    margin-right: 2vw;
+}
+
+#alpha h5:hover{
+    border-bottom: 1px solid #000;
+}
+
+
+#alpha h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0.5vw 0.8vw;
+    border-radius: 50%;
+    border: 2px solid #00000000;
+    cursor: pointer;
+}
+
+#alpha h6:hover{
+    border: 2px solid #000;
+}
+
+#page2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw 5vw;
+}
+
+#page2 #part1{
+    width: 50%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHBvdHJhaXQlMjBtb2RlbCUyMGZhc2hpb258ZW58MHx8MHx8fDA%3D);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+#page2 #part2{
+    width: 46%;
+    height: 100%;
+}
+
+#part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page2 #part1 h1{
+    font-family: acumin-pro, "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 6vh;
+    font-weight: 900;
+    font-style: bold;
+    line-height: 1.3;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 2vw;
+}
+
+#part2-txt1 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#part2-txt1 #txt1{
+    width: 45%;
+    height: 100%;
+    padding: 0 5vw 0 0;
+}
+
+#part2-txt1 #txt2{
+    width: 55%;
+    height: 100%;
+}
+
+#part2-txt1 #txt1 h3{
+    font-family: ogg;
+    font-size: 4vh;
+    line-height: 4.2vh;
+    margin-top: 10%;
+}
+
+#part2-txt1 #txt2 h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5vh;
+    font-weight: 500;
+    margin-top: 8%;
+    line-height: 1.3;
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-top: 10vh;
+}
+
+#page3 #circle-txt{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page3 #circle-txt1{
+    height: 60%;
+    width: 50%;
+    margin: 5vw;
+    border-radius: 50%;
+    border: 5px solid #000;
+    background-color: yellow
+}
+
+#page3 #circle-txt1 #inner{
+    height: 90%;
+    width: 90%;
+    transform: translate(-20%,-25%);
+    margin: 5vw;
+    border-radius: 50%;
+    background-color: crimson;
+    border: 4px solid #000;
+}
+
+#page3 #circle-txt1 #inner i{
+    font-size: 20vh;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   background-color: green
+}
+
+#page3 #circle-txt2{
+    height: 35%;
+    width: 100%;
+    padding: 8vw;
+}
+
+#page3 #circle-txt2 h3{
+    font-size: 4vh;
+    line-height: 1;
+    font-weight: 600;
+    font-family: poppins;
+}
+
+
+#circle-img{
+    height: 100%;
+    width: 50%;
+    padding: 5vw 5vw 0 5vw;
+}
+
+#circle-img img{
+    height: 95%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 15% 20%;
+}
+
+#page4{
+    height: 100%;
+    width: 100%;
+    padding: 6vw 5vw 4vw 5vw;
+    position: relative;
+}
+
+#page4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#royal{
+    position: absolute;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    border: 1px solid #000;
+    padding: 1vw;
+    top: 18%;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#royal h3{
+    font-size: 3vh;
+    font-weight: 400;
+}
+
