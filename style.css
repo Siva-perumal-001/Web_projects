@@ -40,6 +40,11 @@ html,body{
     font-weight: 600;
 }
 
+
+#nav h3{
+    display: none;
+}
+
 #nav h1{
     width: 20%;
     height: 100%;
@@ -48,7 +53,7 @@ html,body{
     justify-content: center;
     font-family:monument ;
     letter-spacing: -1px;
-    font-size: 37px;
+    font-size: 36px;
     position: relative;
 }
 
@@ -58,8 +63,8 @@ html,body{
     font-size: 1.2vw;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 500;
-    top: 20%;
-    left: 88%;
+    top: 19%;
+    left: 90%;
 }
 
 #nav h1::before{
@@ -74,13 +79,13 @@ html,body{
     color: #666;
 }
 
-#nav h2:nth-last-child(1){
-    width: 10%;
-    border-right: none;
+#nav h2:nth-last-child(3){
+    width: 29%;
 }
 
 #nav h2:nth-last-child(2){
-    width: 29%;
+    width: 10%;
+    border-right: none;
 }
 
 #center{
@@ -683,4 +688,125 @@ html,body{
     left: 8%;
     font-size: 1.5vw;
     margin-top: 1vw;
+}
+
+
+
+@media(max-width:600px){
+    body{
+        overflow-x: hidden;
+    }
+
+#nav{
+    height: 6vh;
+    margin-top: 2vw;
+}
+
+#nav h2{
+    display: none;
+}
+
+#nav h1{
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 5vw;
+    font-size: 24px;
+}
+
+#nav h3{
+    display: block;
+    margin-right: 5vw;
+}
+
+#nav h1::after{
+    display: none;
+}
+
+#nav h1::before{
+    display: none;
+}
+
+#center{
+    height: 36%;
+    width: 100%;
+}
+
+#content{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#content video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 30%;
+    padding: 0 4vw 0 4vw;
+}
+
+#over1{
+    padding-bottom: 1vw;
+    mix-blend-mode:difference;
+}
+
+#over1 h1{
+    font-family: monument;
+    font-size: 3.2vw; 
+}
+
+#over1 h2{
+    font-size: 1.6vw;
+}
+
+#over2{
+    mix-blend-mode:difference;
+    padding: 1vw o;
+}
+
+#over2 h4{
+    font-size: 1.6vw;
+    font-weight: 600;
+}
+
+#over2 img{
+    height: 3.5vw;
+}
+
+#scroll{
+    height: 18vh;
+}
+
+#scroll img{
+    height:95% ;
+    width: 15.7%;
+}
+
+#container{
+    height: 100%;
+    width: 230%;
+    animation-duration: 13s;
+}
+
+#alpha{
+    height: 5vh;
+    gap: 0.2vw;
+}
+
+#alpha h5{
+    font-size: 1.7vw;
+    margin-right: 1.1vw;
+}
+
+#alpha h6{
+    font-size: 1.2vw;
+}
+
 }
