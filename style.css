@@ -802,11 +802,12 @@ html,body{
 
 #alpha h5{
     font-size: 1.7vw;
-    margin-right: 1.1vw;
+    margin-right: 1vw;
+    letter-spacing: 3px;
 }
 
 #alpha h6{
-    font-size: 1.2vw;
+    font-size: 1.1vw;
 }
 
 }
